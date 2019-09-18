@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
-    id          = "net.luchinin"
+    id          = "net.luchinin.app"
     versionCode = "10"
-    version     = "1.0.0">
+    version     = "1.1.0">
 
-<name>ТЕСТ. luchinin.net</name>
+<name>luchinin.net</name>
 
 <description>
     Персональный портал Максима Лучинина с закрытой социальной сетью для клиентов и партнеров, а также множество полезных статей в открытом доступе.
@@ -18,7 +18,7 @@
 
 <preference name='phonegap-version' value='cli-8.0.0' />
 
-<preference name='orientation' value='portrait' />
+<preference name='orientation' value='any' />
 
 <gap:plugin name='onesignal-cordova-plugin' spec='2.4.5' source='npm' />
 
@@ -27,14 +27,14 @@
 <preference name='phonegap-version' value='cli-8.0.0' />
 
 <preference name='android-build-tool' value='gradle' />
-<preference name="android-targetSdkVersion" value="28" />
+<preference name='android-minSdkVersion' value='16' />
 <preference name='orientation' value='portrait' />
 
 <preference name='windows-appx-target' value='8.1-phone' />
 <preference name='WindowsToastCapable' value='true' />
 
 <preference name="SplashMaintainAspectRatio" value="true" />
-<preference name="SplashScreenSpinnerColor" value="#2F3031" />
+<preference name="SplashScreenSpinnerColor" value="#E3CC41" />
 
 
 <platform name="android">
