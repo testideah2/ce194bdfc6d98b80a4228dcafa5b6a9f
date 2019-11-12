@@ -5,9 +5,9 @@
         xmlns:cdv="http://cordova.apache.org/ns/1.0"
         id          = "net.luchinin.app"
         versionCode = "10"
-        version     = "1.11.0">
+        version     = "1.12.0">
 
-    <name>luchinin.net</name>
+    <name>Maksim Luchinin</name>
 
     <description>
         Персональный портал Максима Лучинина с закрытой социальной сетью для клиентов и партнеров, а также множество полезных статей в открытом доступе.
@@ -30,7 +30,7 @@
     <preference name='WindowsToastCapable' value='true' />
 
     <preference name="SplashMaintainAspectRatio" value="true" />
-    <preference name="SplashScreenSpinnerColor" value="#344A5D" />
+    <preference name="SplashScreenSpinnerColor" value="#007BFF" />
     
     <platform name="android">
       <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
