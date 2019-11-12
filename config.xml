@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        xmlns:cdv="http://cordova.apache.org/ns/1.0"
         id          = "net.luchinin.app"
         versionCode = "10"
-        version     = "1.10.0">
+        version     = "1.11.0">
 
     <name>luchinin.net</name>
 
@@ -28,21 +30,27 @@
     <preference name='WindowsToastCapable' value='true' />
 
     <preference name="SplashMaintainAspectRatio" value="true" />
-    <preference name="SplashScreenSpinnerColor" value="#E3CC41" />
+    <preference name="SplashScreenSpinnerColor" value="#344A5D" />
+    
+    <platform name="android">
+      <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+          <application android:usesCleartextTraffic="true" />
+      </edit-config>
+    </platform>
 
 
     <platform name="android">
-        <icon src="res/android/icon/0abce105b73533e273d5a3a1a952df97.png" density="ldpi" />
-        <icon src="res/android/icon/da13589ee3dc6ae1acceb78b5264dc0f.png" density="mdpi" />
-        <icon src="res/android/icon/abbe393bdcef90d19dbdccd7014d6d64.png" density="hdpi" />
-        <icon src="res/android/icon/81676afd3463ccbfe1be301c4b5fc7df.png" density="xhdpi" />
-        <icon src="res/android/icon/323a3a1c90b7c693294f5a06d2ffcba1.png" density="xxhdpi" />
-        <icon src="res/android/icon/791e855eee5394d6c5cdc466a9205d1b.png" density="xxxhdpi" />
+        <icon src="res/android/icon/2a62e267441431a7b7c380e1e08aea27.png" density="ldpi" />
+        <icon src="res/android/icon/d4a8d7b874672f4eb4c674df277bca25.png" density="mdpi" />
+        <icon src="res/android/icon/28b52b4a3c2d6e4de074ba555a36520b.png" density="hdpi" />
+        <icon src="res/android/icon/978a2b2bb8bda6294885a6e6ef969fd2.png" density="xhdpi" />
+        <icon src="res/android/icon/7141e04989841575e4442cb39766425b.png" density="xxhdpi" />
+        <icon src="res/android/icon/a86817dcd489babc053253c51ad7aaa6.png" density="xxxhdpi" />
 
-        <splash src="res/android/screen/67a48994c924b632cf9dbd1213cbba1c.png" density="port-hdpi"/>
-        <splash src="res/android/screen/d9c65b8d0359fc60c3740e4100d31c31.png" density="port-ldpi"/>
-        <splash src="res/android/screen/fdbc955c55b95ef5c91b1dfa70a4850d.png" density="port-mdpi"/>
-        <splash src="res/android/screen/466663befb4a3e62f356792ad0195e10.png" density="port-xhdpi"/>
+        <splash src="res/android/screen/6ce6751c9f05b8a64ebc56202ef4c48a.png" density="port-hdpi"/>
+        <splash src="res/android/screen/b84da628f3d2edfa6d401a7e40c32f6e.png" density="port-ldpi"/>
+        <splash src="res/android/screen/49f0333c4a2660739bade523150f9bb7.png" density="port-mdpi"/>
+        <splash src="res/android/screen/528afece1b961c456a4256d22bb2d92a.png" density="port-xhdpi"/>
     </platform>
 
     <platform name="ios">
